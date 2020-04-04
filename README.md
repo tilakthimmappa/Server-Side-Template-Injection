@@ -4,4 +4,4 @@
 
 * Step 2: 
 
-* Step 2: 
+* Step 3: 
