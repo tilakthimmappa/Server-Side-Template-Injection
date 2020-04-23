@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSTI</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 10%;">
+        <h1 style="color: #F04e23;">{{ output }} </h1>
+        {% if not is_value %}
+        <form action="" method="POST">
+            <div style="display: inline-block;">
+                <p style="margin-top: 2%">What is your Name?</p>
+                <br>
+                <input type="text" name="name" placeholder="Full Name">
+            </div>
+            <button type="submit" >Submit</button>
+        </form>
+        {% endif %}
+        <br>
+        {% if is_value %}
+            <a href="/"> Back to Home</a>
+        {% endif %}
+    </div>
+</body>
+</html>
